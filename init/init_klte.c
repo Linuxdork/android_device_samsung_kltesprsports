@@ -54,11 +54,11 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "G900P")) {
+    if (strstr(bootloader, "G860P")) {
         /* kltespr */
-        property_set("ro.build.fingerprint", "samsung/kltespr/kltespr:4.4.2/KOT49H/G900PVPU1ANCB:user/release-keys");
-        property_set("ro.build.description", "kltespr-user 4.4.2 KOT49H G900PVPU1ANCB release-keys");
-        property_set("ro.product.model", "SM-G900P");
+        property_set("ro.build.fingerprint", "samsung/kltesprsports/kltesprsports:4.4.2/KOT49H/G860PVPU1ANG3:user/release-keys");
+        property_set("ro.build.description", "kltesprsports-user 4.4.2 KOT49H G860PVPU1ANG3 release-keys");
+        property_set("ro.product.model", "SM-G860P");
         property_set("ro.product.device", "kltespr");
         property_set("telephony.sms.pseudo_multipart", "1");
         cdma_properties("1", "310120", "Sprint");
